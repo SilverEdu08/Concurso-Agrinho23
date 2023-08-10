@@ -1,0 +1,64 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header, nav, section, footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1, nav ul {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f00;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.8em;
+}
+
+/* Estilos por Seção */
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
